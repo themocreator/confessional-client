@@ -16,7 +16,7 @@ const TabletPage = () => {
   //   });
   // };
   useEffect(() => {
-      const client = mqtt.connect('ws://192.168.0.170:8080')
+      const client = mqtt.connect('wss://192.168.0.170:8080')
         // Subscribe to a topic
         client.on('connect', () => {
           console.log('Connected to MQTT broker');
